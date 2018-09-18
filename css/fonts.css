@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "LatoRegular";
+	src: url("../fonts/Lato-Regular_0.ttf") format("truetype");
+}
+@font-face {
+	font-family: "LatoLight";
+	src: url("../fonts/Lato-Light_0.ttf") format("truetype");
+}
+@font-face {
+	font-family: "LatoSemibold";
+	src: url("../fonts/Lato-Semibold_0.ttf") format("truetype");
+}
+@font-face {
+	font-family: "LatoMedium";
+	src: url("../fonts/Lato-Medium_0.ttf") format("truetype");
+}
+@font-face {
+	font-family: "LatoHeavy";
+	src: url("../fonts/Lato-Heavy_0.ttf") format("truetype");
+}
+@font-face {
+	font-family: "LatoBold";
+	src: url("../fonts/Lato-Bold_0.ttf") format("truetype");
+}
+@font-face {
+	font-family: "MinionProSemibold";
+	src: url("../fonts/MinionPro-Semibold.otf") format("truetype");
+}
+@font-face {
+	font-family: "MinionProMedium";
+	src: url("../fonts/MinionPro-Medium.otf") format("truetype");
+}

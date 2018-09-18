@@ -47,7 +47,7 @@
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
-    width: 100%; }
+    max-width: 100%;}
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }
@@ -55,7 +55,6 @@
   .owl-carousel .owl-nav .owl-next,
   .owl-carousel .owl-dot {
     cursor: pointer;
-    cursor: hand;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;

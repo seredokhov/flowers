@@ -42,13 +42,17 @@ $(function(){
         loop:false,
         margin:0,
         merge:true,
-        nav:false,
+        nav:true,
+        navText: ['',''],
+        dots: true,
         responsive:{
-            678:{
-                mergeFit:true
+            0:{
+                mergeFit:true,
+                items: 1
             },
-            1000:{
-                mergeFit:false
+            768:{
+                mergeFit:false,
+                items: 3
             }
         },
         onInitialize: setCount,
@@ -105,4 +109,64 @@ $(function(){
 
         myMap.geoObjects.add(placemark);
     }
+});
+
+// Информация о букете (моб версия)
+$(function(){
+    var infoLink = $('.mob_info'),
+        fade = $('.mobile_fade'),
+        close = fade.find('.close_fade');
+
+
+    infoLink.on('click', function() {
+        $(this).parent().siblings('.mobile_fade').toggleClass('showed');
+        return false;
+    });
+
+    close.on('click', function() {
+        $(this).parent().removeClass('showed');
+    });
+});
+
+// Перемещение контактов
+$(function() {
+    if (document.body.clientWidth < 992) {
+        var target = $('#remove').detach(),
+            block = $('#for_remove');
+        target.appendTo(block);
+    }
+});
+
+// Дополнительная шапка
+
+$(function() {
+    if (document.body.clientWidth > 992) {
+        $(window).scroll(function (){
+            var windowScroll = $(window).scrollTop();
+            var offset = 50;
+
+            if (windowScroll > offset) {
+                $('header').addClass("fix");
+            } else {
+                $('header').removeClass("fix");
+            }
+        });
+    }
+});
+
+// Мобильное меню
+$(function() {
+    var open = $('.hamb'),
+        close = $('.menu_close'),
+        menu = $('.mobile_menu'),
+        overlay = $('.overlay');
+
+    open.on('click', function() {
+        menu.addClass('opened');
+        overlay.fadeIn(300);
+    });
+    close.add(overlay).on('click', function() {
+        menu.removeClass('opened');
+        overlay.fadeOut(300);
+    });
 });
