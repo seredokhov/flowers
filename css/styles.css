@@ -55,9 +55,7 @@ header > .container > .row,
 	align-items: center;
 	justify-content: flex-start;
 }
-.section_1_header {
-	background-color: rgba(255, 255, 255, .65);
-}
+
 .hamb{
 	width: 40px;
 	height: 40px;
@@ -109,6 +107,9 @@ header > .container > .row,
 .header_links a.ka i {
 	width: 90px;
 	height: 90px;
+	background: url('../images/header_link_ka.png') no-repeat center;
+}
+header .header_links a.ka i {
 	background: url('../images/header_link_ka_fix.png') no-repeat center;
 }
 .header_links a.flowers i {
@@ -119,6 +120,9 @@ header > .container > .row,
 .header_links a.rafale i {
 	width: 130px;
 	height: 50px;
+	background: url('../images/header_link_rafale.png') no-repeat center;
+}
+header .header_links a.rafale i {
 	background: url('../images/header_link_rafale_fix.png') no-repeat center;
 }
 .header_contacts {
@@ -129,9 +133,12 @@ header > .container > .row,
 .header_contacts a {
 	text-decoration: none;
 	display: block;
-	color: #010101;
+	color: #fff;
 	font-size: 18px;
 	line-height: 26px;
+}
+header .header_contacts a {
+	color: #010101;
 }
 .header_contacts .phone::before {
 	content: "";
@@ -140,7 +147,7 @@ header > .container > .row,
 	margin-right: 15px;
 	width: 16px;
 	height: 16px;
-	background: url('../images/icons/SVG/phone2.svg') no-repeat center;
+	background: url('../images/icons/SVG/phone.svg') no-repeat center;
 }
 header .header_contacts .phone::before {
 	background: url('../images/icons/SVG/phone2.svg') no-repeat center;
@@ -152,14 +159,14 @@ header .header_contacts .phone::before {
 	margin-right: 15px;
 	width: 16px;
 	height: 16px;
-	background: url('../images/icons/SVG/whatsapp2.svg') no-repeat center;
+	background: url('../images/icons/SVG/whatsapp.svg') no-repeat center;
 }
 header .header_contacts .wats::before {
 	background: url('../images/icons/SVG/whatsapp2.svg') no-repeat center;
 }
 /* Секция 1 */
 .section_1 {
-	background: url('../images/bg_1.jpg') no-repeat center #b1eef2;
+	background: url('../images/bg_1.jpg') no-repeat center #020202;
 	-webkit-background-size: cover;
 	background-size: cover;
 	min-height: 100vh;
@@ -170,7 +177,7 @@ header .header_contacts .wats::before {
 }
 .section_1 .title {
 	text-align: center;	
-	color: #1a1a1a;
+	color: #fff;
 	margin-bottom: 100px;
 	padding: 0 15px;
 }
@@ -197,13 +204,16 @@ header .header_contacts .wats::before {
 }
 .secton_1_input {
 	background: transparent;
-	border: 1px solid #1a1a1a;
+	border: 1px solid #b3b3b3;
 	font-size: 15px;
-	color: #1a1a1a;
+	color: #fff;
 	padding: 0 35px;
 } 
-.secton_1_input::placeholder {
-	color: #1a1a1a;
+.section_1_submit {
+	background: #fff;
+	font-size: 12px;
+	color: #000000;
+	text-transform: uppercase;
 }
 .secton_1_input,
 .section_1_submit {
@@ -213,20 +223,11 @@ header .header_contacts .wats::before {
 	padding: 0 35px;
 	font-family: 'LatoLight';
 }
-.section_1_submit {
-	line-height: normal !important;
-	background: transparent;
-	border: 2px solid #1a1a1a;
-	font-size: 12px;
-	color: #1a1a1a;
-	text-transform: uppercase;
-	padding: 0;
-}
 .section_1_delivery {
 	margin-bottom: 65px;
 }
 .section_1_delivery .text {
-	color: #1a1a1a;
+	color: #fff;
 	text-align: center;
 	font-size: 20px;
 	margin-bottom: 30px;
@@ -256,11 +257,11 @@ header .header_contacts .wats::before {
 .section_1_change_form {
 	margin-bottom: 0;
 	min-height: 125px;
-	color: #1a1a1a;
+	color: #fff;
 }
 .section_1_footer_title {
 	font-size: 20px;
-	color: #1a1a1a;
+	color: #fff;
 	font-family: "LatoSemibold";
 }
 .section_1_drop_block {
@@ -270,7 +271,7 @@ header .header_contacts .wats::before {
 .section_1_drop_block .name {
 	font-size: 15px;
 	line-height: 24px;
-	color: #1a1a1a;
+	color: #fff;
 	text-transform: uppercase;
 	font-family: "LatoMedium";
 }
@@ -281,7 +282,7 @@ header .header_contacts .wats::before {
 	width: 12px;
 	height: 6px;
 	margin-left: 12px;
-	background: url('../images/icons/SVG/arrow down2.svg') no-repeat center;
+	background: url('../images/icons/SVG/arrow down.svg') no-repeat center;
 }
 .section_1_drop_block .sort {
 	font-size: 13px;
@@ -291,7 +292,7 @@ header .header_contacts .wats::before {
 .section_1_drop_block .drop {
 	display: none;
 	list-style: none;
-	background: #fff;
+	background: #1a1a1a;
 	position: absolute;
 	bottom: 100%;
 	left: 0;
@@ -306,7 +307,6 @@ header .header_contacts .wats::before {
 }
 
 .section_1_change_form .change {
-	color: #fff;
 	background: #e11d71;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -797,7 +797,7 @@ header .header_contacts .wats::before {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #2f2d3d;
+	background: #171717;
 }
 .section_6 .h2,
 .section_6 h2 {
@@ -1106,7 +1106,6 @@ footer .app_links a.googleplay {
 	}
 	.header_contacts {
 		margin-top: 10px;
-		margin-bottom: 10px;
 		align-items: center;
 	}
 	.header_contacts a {
@@ -1154,6 +1153,7 @@ footer .app_links a.googleplay {
 	}
 	.section_3 .title .h2,
 	.section_3 .title h2 {
+		color: #fff;
 		font-size: 35px;
 		line-height: normal;
 	}
@@ -1161,6 +1161,9 @@ footer .app_links a.googleplay {
 	.title h2 {
 		font-size: 35px !important;
 		line-height: normal !important;
+	}
+	.section_3 .title .text {
+		color: #fff;
 	}
 	.section_3 .title {
 		margin-bottom: 35px;
@@ -1319,7 +1322,7 @@ footer .app_links a.googleplay {
 	}
 	/* --------------- */
 	.section_6 {
-		background: #2f2d3d;
+		background: #171717;
 		padding: 50px 0 100px;
 	}
 	.section_6 .bg {
@@ -1606,6 +1609,7 @@ footer .app_links a.googleplay {
 		margin-bottom: 30px !important;
 	}
 	.section_3 .title .text {
+		color: #fff;
 		font-size: 18px;
 		line-height: 22px;
 	}
